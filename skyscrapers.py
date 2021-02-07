@@ -158,6 +158,10 @@ def check_horizontal_visibility(board: list):
 def invert_board(board: list):
     """
     inverts board that all columns become lines
+    >>> invert_board(['***21**', '452453*', '423145*', '*543215', '*35214*', '*41532*', '*2*1***'])
+    [('*', '2', ('5', '2', '5', '3', '4')), ('*', '*', ('2', '3', '4', '5', '1')), \
+('2', '1', ('4', '1', '3', '2', '5')), ('1', '*', ('5', '4', '2', '1', '3')), \
+('*', '*', ('3', '5', '1', '4', '2'))]
     """
     splitted_board = split_board(board)
     new_splitted_board = []
